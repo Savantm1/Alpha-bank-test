@@ -5,13 +5,15 @@ import { fetchCards } from './AsyncActions';
 interface InitialStateType {
   loading: boolean;
   error?: null | string;
-  cards: ICardType[]
+  cards: ICardType[];
+  filterValue: boolean;
 }
 
 const initialState:InitialStateType = {
   loading: true,
   error: null,
-  cards: []
+  cards: [],
+  filterValue: false
 }
 
 
@@ -23,7 +25,8 @@ const CardsSlice = createSlice({
     like: (state, action: PayloadAction<number>): InitialStateType => {
       const cardsModify = state.cards.map(card => {
         if (card.id === action.payload) {
-          card.like = true
+          let value = card.like
+          card.like = !value
         }
         return card
       })
@@ -32,6 +35,10 @@ const CardsSlice = createSlice({
     },
     remove: (state, action: PayloadAction<number>) => {
       state.cards = state.cards.filter(card => card.id !== action.payload)
+    },
+    filter: (state) => {
+      let value = state.filterValue
+      state.filterValue = !value
     }
   },
   extraReducers: {
@@ -55,6 +62,6 @@ const CardsSlice = createSlice({
   }
 })
 
-export const {like , remove } = CardsSlice.actions
+export const {like , remove, filter } = CardsSlice.actions
 
 export default CardsSlice.reducer

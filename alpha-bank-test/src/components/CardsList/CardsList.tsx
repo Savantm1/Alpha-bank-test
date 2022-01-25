@@ -10,11 +10,13 @@ const CardsList: React.FC = (props) => {
   const dispatch = useAppDispatch()
   useEffect(() => {
     dispatch(fetchCards())
-  },[])
+  },[dispatch])
 
-  const { cards, loading, error } = useAppSelector(state => state.cards)
+  const { cards, loading, error, filterValue } = useAppSelector(state => state.cards)
+  const likedElems = cards.filter(card => card.like === true)
+  const CardsElems = filterValue === true ? likedElems : cards
 
-  const elems = cards.map(card => {
+  const elems = CardsElems.map(card => {
     return (
       <Card
         key={card.id}

@@ -6,7 +6,7 @@ export const  fetchCards = createAsyncThunk(
     "cards/fetchCards",
     async (_, thunkAPI) => {
         try {
-            const response = await axios.get<ICardType[]>('https://zoo-animal-api.herokuapp.com/animals/rand/5')
+            const response = await axios.get<ICardType[]>('https://zoo-animal-api.herokuapp.com/animals/rand/10')
             return response.data
         } catch (error) {
             return thunkAPI.rejectWithValue("Ошибка")

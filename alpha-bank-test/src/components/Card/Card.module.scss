@@ -5,7 +5,7 @@
   padding: 1rem;
   border: 2px solid rgb(168, 200, 158);
   border-radius: 2rem;
-  width: 90%;
+  width: 100%;
 
   .left_side {
     width: 50%;
@@ -28,10 +28,7 @@
         height: 100%;
         object-fit: contain;
       }
-
     }
-
-
   }
 
   .right_side {
@@ -52,6 +49,7 @@
         margin: 0.3rem 0;
         background-color:white;
         border-radius: 0.5rem;
+        width: 100%;
 
         .desc {
           text-align: start;
