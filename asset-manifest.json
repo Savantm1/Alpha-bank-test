@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Alpha-bank-test/static/css/main.8ef250fa.css",
+    "main.css": "/Alpha-bank-test/static/css/main.c408276d.css",
     "main.js": "/Alpha-bank-test/static/js/main.ee551903.js",
     "static/js/787.acd32e57.chunk.js": "/Alpha-bank-test/static/js/787.acd32e57.chunk.js",
     "static/media/preloader.gif": "/Alpha-bank-test/static/media/preloader.b51df3f3ec072548cb48.gif",
     "static/media/remove.png": "/Alpha-bank-test/static/media/remove.3c662b752278fc52f408.png",
     "index.html": "/Alpha-bank-test/index.html",
     "static/media/like.svg": "/Alpha-bank-test/static/media/like.68e770b0f070c6309166b06fbbf7f4c7.svg",
-    "main.8ef250fa.css.map": "/Alpha-bank-test/static/css/main.8ef250fa.css.map",
+    "main.c408276d.css.map": "/Alpha-bank-test/static/css/main.c408276d.css.map",
     "main.ee551903.js.map": "/Alpha-bank-test/static/js/main.ee551903.js.map",
     "787.acd32e57.chunk.js.map": "/Alpha-bank-test/static/js/787.acd32e57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ef250fa.css",
+    "static/css/main.c408276d.css",
     "static/js/main.ee551903.js"
   ]
 }
