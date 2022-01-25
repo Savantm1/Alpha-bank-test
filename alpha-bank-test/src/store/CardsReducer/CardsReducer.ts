@@ -16,8 +16,6 @@ const initialState:InitialStateType = {
   filterValue: false
 }
 
-
-
 const CardsSlice = createSlice({
   name: 'cards',
   initialState,
